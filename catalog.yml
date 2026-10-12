@@ -1,0 +1,19 @@
+services:
+  - id: proxy
+    owner: platform-on-call
+    criticality: high
+    runbook: runbooks/proxy.md
+    escalation: platform-on-call
+    reviewed: 2026-10-12
+  - id: game-backends
+    owner: game-operations
+    criticality: high
+    runbook: runbooks/backends.md
+    escalation: game-operations
+    reviewed: 2026-10-12
+  - id: persistence
+    owner: data-operations
+    criticality: high
+    runbook: runbooks/persistence.md
+    escalation: data-operations
+    reviewed: 2026-10-12
